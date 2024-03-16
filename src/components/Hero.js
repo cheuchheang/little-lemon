@@ -1,24 +1,23 @@
 import React from "react";
 import FoodImage from "./../assets/restauranfood.jpg";
+import Button from "../sub-components/Button";
 
 const Hero = () => {
   return (
     <div
       style={{
-        position: "absolute",
-        backgroundColor: "#495E57",
-        width: "100%",
-        height: 260,
-        top: "10%",
+        display: "flex",
+        flex: 1,
+        zIndex: 1,
+        width: "90%",
+        flexDirection: "row",
         justifyContent: "space-between",
       }}
     >
       <div
         style={{
-          marginLeft: 50,
-          marginRight: "50%",
-          justifyContent: "center",
-          alignItems: "center",
+          width: "50%",
+          marginTop: 30,
         }}
       >
         <h1 style={{ color: "#f4ce14" }}>Little Lemon</h1>
@@ -27,23 +26,16 @@ const Hero = () => {
           We are a family owned Mediterranean restaurant focused on traditional
           recipes served with a modern twist.
         </p>
+        <Button text={"Reserve a Table"} />
       </div>
-      <div style={{ position: "absolute", right: "10%", top: 20 }}>
-        <img src={FoodImage} height="300" width="250" />
+      <div style={{ marginTop: 20 }}>
+        <img
+          src={FoodImage}
+          height="300"
+          width="250"
+          style={{ borderRadius: 20 }}
+        />
       </div>
-
-      <button
-        style={{
-          backgroundColor: "#f4ce14",
-          borderColor: "transparent",
-          height: 30,
-          width: 120,
-          borderRadius: 20,
-          marginLeft: 50,
-        }}
-      >
-        Reserve a Table
-      </button>
     </div>
   );
 };
