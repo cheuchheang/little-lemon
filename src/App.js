@@ -6,12 +6,10 @@ import BookingPage from "./components/BookingPage";
 function App() {
   return (
     <BrowserRouter>
-      <main>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/booking" element={<BookingPage />}></Route>
-        </Routes>
-      </main>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/booking" element={<BookingPage />}></Route>
+      </Routes>
     </BrowserRouter>
   );
 }

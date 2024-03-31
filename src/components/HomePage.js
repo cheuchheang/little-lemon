@@ -2,9 +2,6 @@ import React from "react";
 import Nav from "./Nav";
 import Hero from "./Hero";
 import Highlights from "./Highlights";
-import Testimonials from "./Testimonials";
-import About from "./About";
-import Footer from "./Footer";
 
 const HomePage = () => {
   return (
@@ -17,9 +14,9 @@ const HomePage = () => {
         marginLeft: "10%",
         marginRight: "10%",
         zIndex: 0,
-        
       }}
     >
+      <Nav />
       <div
         style={{
           position: "absolute",
@@ -29,12 +26,8 @@ const HomePage = () => {
           top: "10%",
         }}
       />
-      <Nav />
       <Hero />
       <Highlights />
-      {/* <Testimonials />
-      <About />
-      <Footer /> */}
     </main>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { NavLink } from "react-router-dom";
 
 const Card = ({ title, price, body, image }) => {
   return (
@@ -50,7 +51,9 @@ const Card = ({ title, price, body, image }) => {
           </div>
         </div>
         <div style={{ marginTop: "auto" }}>
+          <NavLink to='/booking'>
           <Button text={"Order a delivery"} />
+          </NavLink>
         </div>
       </div>
     </div>
