@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ text, height = 30, width = 120, onclick }) => {
+const Button = ({ text, height = 30, width = 120 }) => {
   return (
     <button
       style={{
@@ -10,8 +10,6 @@ const Button = ({ text, height = 30, width = 120, onclick }) => {
         width,
         borderRadius: 20,
       }}
-      onClick={() => onclick()}
-      onFocus
     >
       {text}
     </button>
