@@ -4,7 +4,6 @@ import Card from "../sub-components/Card";
 import GreekSalad from "../assets/greek-salad.jpg";
 import Bruchetta from "../assets/bruchetta.jpg";
 import Dessert from "../assets/lemon-dessert.jpg";
-import { NavLink } from "react-router-dom";
 
 const Highlights = () => {
   return (
@@ -28,9 +27,7 @@ const Highlights = () => {
         <div style={{}}>
           <text style={{ fontSize: 60 }}>This weeks specials!</text>
         </div>
-        <NavLink to="/booking">
-          <Button text={"Online Menu"} width={200} height={50} />
-        </NavLink>
+        <Button text={"Online Menu"} width={200} height={50} />
       </div>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <Card
